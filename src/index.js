@@ -10,9 +10,9 @@ app.use(bodyParser.json());
 
 const router = express.Router();
 
-const userRoute = require('./routes/userRoute');
-const imgUserRoute = require('./routes/imgUserRoute');
-var chatRoute = require('./routes/chatRoute');
+const userRoute = require('./src/routes/userRoute');
+const imgUserRoute = require('./src/routes/imgUserRoute');
+var chatRoute = require('./src/routes/chatRoute');
 app.use(cors({
     "origin": "*",
     "methods": "POST,GET,HEAD,PUT,PATCH,DELETE"
